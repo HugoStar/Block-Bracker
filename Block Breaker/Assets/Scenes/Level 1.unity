@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 445590788}
   - component: {fileID: 445590787}
   - component: {fileID: 445590786}
+  - component: {fileID: 445590790}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -451,12 +452,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445590785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.84, y: 7.93, z: 0}
+  m_LocalPosition: {x: 10.14, y: 0.714, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445590790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445590785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffafc7f96519949fab542c820e4bd82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &499778551
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +580,7 @@ GameObject:
   - component: {fileID: 678776287}
   - component: {fileID: 678776286}
   - component: {fileID: 678776288}
+  - component: {fileID: 678776289}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -630,7 +644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678776285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.68, y: 0.25, z: 0}
+  m_LocalPosition: {x: 10.12, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -668,6 +682,21 @@ PolygonCollider2D:
       - {x: 1, y: -0.25}
       - {x: 1.0020247, y: 0.04398316}
       - {x: 0.8177099, y: 0.12442237}
+--- !u!114 &678776289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678776285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4b7773b1f9846ae87dd236fb431596, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWithInUnits: 16
+  minX: 1
+  maxX: 15
 --- !u!1 &986021980
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,7 +714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &986021981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,7 +828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1551704613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1150,11 +1179,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
