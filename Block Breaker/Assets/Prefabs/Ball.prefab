@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3914033736398179301}
   - component: {fileID: 3914033736398179298}
   - component: {fileID: 3914033736398179299}
-  - component: {fileID: 3914033736398179303}
   - component: {fileID: 721748838705483567}
+  - component: {fileID: 3914033736398179303}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -120,27 +120,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.012800083}
   serializedVersion: 2
   m_Radius: 0.20719992
---- !u!114 &3914033736398179303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3914033736398179296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffafc7f96519949fab542c820e4bd82f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paddle1: {fileID: 0}
-  xPush: 2
-  yPush: 15
-  ballSounds:
-  - {fileID: 8300000, guid: 289680f59f4f94fa6b704310a73e2424, type: 3}
-  - {fileID: 8300000, guid: 962d1c9a975464bb1b44f72b38a2f19a, type: 3}
-  - {fileID: 8300000, guid: fc4e0fabde5d74b2ea5c5aeca7845fc2, type: 3}
-  - {fileID: 8300000, guid: 0fc8ded9970e54c0daa5ed85b8ba02a0, type: 3}
-  - {fileID: 8300000, guid: 289680f59f4f94fa6b704310a73e2424, type: 3}
 --- !u!82 &721748838705483567
 AudioSource:
   m_ObjectHideFlags: 0
@@ -237,3 +216,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3914033736398179303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3914033736398179296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffafc7f96519949fab542c820e4bd82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 0}
+  xPush: 2
+  yPush: 15
+  ballSounds:
+  - {fileID: 8300000, guid: 962d1c9a975464bb1b44f72b38a2f19a, type: 3}
+  - {fileID: 8300000, guid: fc4e0fabde5d74b2ea5c5aeca7845fc2, type: 3}
+  - {fileID: 8300000, guid: 0fc8ded9970e54c0daa5ed85b8ba02a0, type: 3}
+  - {fileID: 8300000, guid: 289680f59f4f94fa6b704310a73e2424, type: 3}
